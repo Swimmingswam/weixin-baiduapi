@@ -1,0 +1,51 @@
+.background{
+  background-color:#87CEFA;
+  color:#666;
+}
+.title{
+  margin-left:30%;
+  font-size:40rpx;
+  display:block;
+  width:266rpx;
+}
+.todaylist{
+  margin:12%;
+  color:aliceblue;
+}
+.recommend{
+  margin:10%;
+}
+.r_title{
+margin-left:25%;
+}
+.big{
+  font-size:55rpx;
+  padding-left:12rpx;
+}
+.r_des{
+  text-indent: 2em
+}
+.future{
+margin:15rpx;
+border:2rpx solid #fff;
+padding-bottom: 50rpx;
+color:bisque;
+}
+.f_item{
+display:block;
+margin-top:50rpx;
+}
+.p_left{
+width:150rpx;
+height:150rpx;
+float:left;
+}
+.center{
+display:inline-block;
+margin-left:60rpx;
+}
+.p_right{
+float:right;
+width:150rpx;
+height:150rpx;
+}

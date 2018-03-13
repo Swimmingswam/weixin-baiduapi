@@ -1,0 +1,41 @@
+<view class="background">
+  <p class="title">{{currentWeather.date}}</p>
+  <view class="todaylist">
+    <view>城市：{{currentWeather.currentCity}}</view>
+    <view>PM：{{currentWeather.pm25}}</view>
+    <view>温度：{{currentWeather.temperature}}</view>
+    <view>天气：{{currentWeather.weatherDesc}}</view>
+    <view>风向：{{currentWeather.wind}}</view>
+  </view>
+  <view wx:for="{{weatherDetail.results[0].index}}" class="recommend">
+    <view class="r_title">{{item.title}}:<p class="big">{{item.zs}}</p></view>
+    <view class="r_des">{{item.des}}</view>
+  </view>
+  <view class="future"> 
+    <ul>
+      <li wx:for="{{futureWeather}}" class="f_item">
+        <view wx:if="{{index}}">
+          <image src="{{item.dayPictureUrl}}" class="p_left"/>
+          <view class="center">
+          <view>{{item.date}}</view>
+          <view>{{item.weather}}</view>
+          <view>{{item.wind}}</view>
+           </view>
+          <image src="{{item.nightPictureUrl}}" class="p_right"/>
+        </view>
+      </li>
+    </ul>
+  </view>
+
+</view>
+<view style="padding-top:30px"></view>
+<!--
+<block wx:for="{{futureWeather}}">  
+    <view style="border:1px solid #ccc; margin:5px">  
+        <view>{{item.date}}</view>  
+        <view>{{item.temperature}}</view>  
+        <view>{{item.weather}}</view>  
+        <view>{{item.wind}}</view>  
+    </view>  
+</block>  
+-->

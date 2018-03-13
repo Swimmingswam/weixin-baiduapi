@@ -1,0 +1,17 @@
+.map_container{ 
+    height: 300px; 
+    width: 100%; 
+} 
+
+.map { 
+    height: 100%; 
+    width: 100%; 
+} 
+.info{
+    text-align:center;
+    margin-top: 25%;
+    border:#ccc solid 1rpx;
+    border-radius:225rpx;
+    padding:30rpx;
+    box-sizing: border-box;
+}
